@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+p{
+    font-size:15px;
+}
+
+.login{
+    display:grid;
+    place-items: center;
+    height:100vh;
+    background-color: black;
+}
+.login>img{
+    width:100%;
+}
+.login>.a-container>button{
+    padding:20px;
+    font-size:18px;
+    border-radius:100px ;
+    background-color: #1db954;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor:pointer;
+}
+.login>.a-container> button:hover{
+    color:#1db954;
+    background-color: white;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+@layer components{
+    .button-icon:hover{
+        transform:scale(1.2);
+        transition:all 0.3s ease;
+    }
+}
